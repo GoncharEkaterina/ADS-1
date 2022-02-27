@@ -1,3 +1,4 @@
+// Copyright 2022 NNTU-CS
 #include <cstdint>
 #include <iostream>
 #include "alg.h"
@@ -47,12 +48,12 @@ uint64_t sumPrime(uint64_t hbound) {
   return mean;
 }
 
-int main () {
+int main() {
     int a = 0;
     std::cin >> a;
     std::cout << checkPrime(a) << std::endl;
     std::cout << nPrime(a) << std::endl;
     std::cout << nextPrime(a) << std::endl;
-    std::cout << sumPrime(a) << std::endl;    
+    std::cout << sumPrime(a) << std::endl;
     return 0;
 }
