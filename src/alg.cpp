@@ -10,7 +10,7 @@ uint64_t nextPrime(uint64_t value);
 uint64_t sumPrime(uint64_t hbound);
 
 bool checkPrime(uint64_t value) {
-    for (uint64_t i = 2; i < = sqrt(value); i++)
+    for (uint64_t i = 2; i <= sqrt(value); i++)
                 if (value % i == 0)
                     return false;
     return true;
