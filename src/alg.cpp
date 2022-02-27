@@ -39,8 +39,10 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
     uint64_t mean = 0;
     for (int num = 0; num < hbound; num++) {
-        mean += num;
-        num++;
+            if (checkPrime(num) == true) {
+                mean += num;
+                num++;
+            }
     }
   return mean;
 }
@@ -48,9 +50,9 @@ uint64_t sumPrime(uint64_t hbound) {
 int main () {
     int a = 0;
     std::cin >> a;
-    std::cout << checkPrime(a);
-    std::cout << nPrime(a);
-    std::cout << nextPrime(a);
-    std::cout << sumPrime(a);    
+    std::cout << checkPrime(a) << std::endl;
+    std::cout << nPrime(a) << std::endl;
+    std::cout << nextPrime(a) << std::endl;
+    std::cout << sumPrime(a) << std::endl;    
     return 0;
 }
