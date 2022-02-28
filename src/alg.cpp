@@ -22,8 +22,8 @@ uint64_t nPrime(uint64_t n) {
     for (int num = 2; num < n ; num++) {
         if (checkPrime(num) == true) {
             ch++;
-            if (max < i)
-                max = i;
+            if (max < num)
+                max = num;
         }
     }
   return max;
