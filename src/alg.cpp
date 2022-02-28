@@ -19,7 +19,7 @@ bool checkPrime(uint64_t value) {
 uint64_t nPrime(uint64_t n) {
     uint64_t ch = 0;
     uint64_t max = 0;
-    for (int num = 2; i < n ; num++) {
+    for (int num = 2; num < n ; num++) {
         if (checkPrime(num) == true) {
             ch++;
             if (max < i)
