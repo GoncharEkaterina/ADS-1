@@ -22,6 +22,7 @@ uint64_t nPrime(uint64_t n) {
         if (checkPrime(i) == true) {
             ch++;
         }
+    }
     return ch;
 }
 
