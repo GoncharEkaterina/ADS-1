@@ -18,15 +18,11 @@ bool checkPrime(uint64_t value) {
 
 uint64_t nPrime(uint64_t n) {
     uint64_t ch = 0;
-    uint64_t max = 0;
-    for (int num = 2; num < n ; num++) {
-        if (checkPrime(num) == true) {
+    for (int i = 2; i <= n; i++) {
+        if (checkPrime(i) == true) {
             ch++;
-            if (max < num)
-                max = num;
         }
-    }
-  return max;
+    return ch;
 }
 
 uint64_t nextPrime(uint64_t value) {
